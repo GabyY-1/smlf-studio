@@ -3,23 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SMLF Studio</title>
-  <meta name="description" content="Le site officiel du studio SMLF.">
+  <meta name="description" content="SMLF Studio, studio indépendant français de création de jeux vidéo fondé par GabyY et Sombre.">
+  <meta name="theme-color" content="#101114">
+  <title>SMLF Studio — Accueil</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="SMLF Studio, accueil"><img src="assets/logo.png" alt="SMLF Studio"></a>
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navigation"><span></span><span></span></button>
+    <nav class="navigation" id="navigation" aria-label="Navigation principale">
+      <a href="index.html" aria-current="page">Accueil</a>
+      <a href="projets.html">Projets</a>
+      <a href="equipe.html">L'équipe</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
   <main>
-    <section class="presentation">
-
-        <div class="texte">
-            <h1>SMLF Studio</h1>
-            <p>SMLF Studio est un studio de création de jeux-vidéos français créé par GabyY et Sombre.</p>
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="status-dot"></span> STUDIO INDÉPENDANT · FRANCE</span>
+        <h1>Des idées.<br><span class="text-gradient">Des mondes.</span><br>Des jeux.</h1>
+        <p class="hero-description">SMLF Studio est un studio français indépendant de création de jeux vidéo, fondé par GabyY et Sombre.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="projets.html">Découvrir nos projets <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="equipe.html">Rencontrer l'équipe <span aria-hidden="true">→</span></a>
         </div>
-
-        <div class="image">
-            <img src="assets/logo-et-txt-sans-rect.png" alt="Logo sans rect">
-        </div>
-
+      </div>
+      <div class="hero-visual">
+        <div class="visual-glow"></div>
+        <img src="assets/logo-et-txt-sans-rect.png" alt="Identité visuelle de SMLF Studio">
+        <span class="visual-caption">SMLF STUDIO <span>— EST. 2026</span></span>
+      </div>
+      <div class="hero-index" aria-hidden="true">01 <span>/</span> 04</div>
     </section>
-</main>
+
+    <section class="intro-section section-shell">
+      <div class="section-heading">
+        <span class="eyebrow">01 — LE STUDIO</span>
+        <h2>Créer, expérimenter,<br><span class="muted">et donner vie aux idées.</span></h2>
+      </div>
+      <div class="intro-content">
+        <p>Nous développons des expériences interactives avec une envie simple : imaginer des univers, construire des mécaniques et transformer des concepts en jeux.</p>
+        <a class="arrow-link" href="equipe.html">En savoir plus sur nous <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="focus-section">
+      <div class="section-shell">
+        <div class="section-topline">
+          <span class="eyebrow">02 — NOTRE APPROCHE</span>
+          <span class="section-note">Un studio, plusieurs idées.</span>
+        </div>
+        <div class="focus-grid">
+          <article class="focus-card">
+            <span class="card-number">01</span>
+            <div class="focus-icon" aria-hidden="true">✳</div>
+            <h3>Imaginer</h3>
+            <p>Partir d'une idée, explorer des directions et poser les bases d'un univers.</p>
+          </article>
+          <article class="focus-card">
+            <span class="card-number">02</span>
+            <div class="focus-icon" aria-hidden="true">⌘</div>
+            <h3>Développer</h3>
+            <p>Concevoir les systèmes et donner forme aux expériences interactives.</p>
+          </article>
+          <article class="focus-card">
+            <span class="card-number">03</span>
+            <div class="focus-icon" aria-hidden="true">↗</div>
+            <h3>Partager</h3>
+            <p>Faire découvrir nos créations et les faire évoluer au fil du temps.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section section-shell">
+      <span class="eyebrow">ET MAINTENANT ?</span>
+      <div class="closing-row">
+        <h2>La suite s'écrit<br><span class="text-gradient">en jouant.</span></h2>
+        <a class="button button-outline" href="projets.html">Explorer les projets <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="index.html"><img src="assets/logo.png" alt="SMLF Studio"></a>
+    <p>© <span data-year>2026</span> SMLF Studio. Tous droits réservés.</p>
+    <a href="#top" class="back-top">Retour en haut ↑</a>
+  </footer>
 </body>
 </html>
